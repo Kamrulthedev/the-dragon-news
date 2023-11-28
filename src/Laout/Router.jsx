@@ -1,9 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLaout from "./MainLaout";
 import Home from "../Pages/Home/Home";
-
-
-
 const MyRouter = createBrowserRouter ([
     {
         path:'/',
