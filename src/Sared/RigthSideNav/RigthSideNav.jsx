@@ -22,7 +22,7 @@ const RigthSideNav = () => {
             </div>
             {/* Find Us on */}
             <div className="p-4 mb-2">
-                <h2 className="text-2xl font-bold">Find Us On</h2>
+                <h2 className="text-2xl font-bold mb-6">Find Us On</h2>
                 <a className="flex p-4 text-lg items-center border-2 rounded-t-lg" href="">
                     <FaFacebook className="mr-2"></FaFacebook >
                     Facebook</a>
@@ -44,7 +44,7 @@ const RigthSideNav = () => {
              <img src={qzone3} alt="" />
             
             </div>
-            <div className="bg-cover p-12 bg-center" style={{ backgroundImage: `url(${bg1}` }}>
+            <div className="bg-cover p-12  bg-center" style={{ backgroundImage: `url(${bg1}` }}>
                 <h1 className="text-4xl mb-4 font-bold text-center text-white ">Create an 
                    <br  /> Amazing
                    <br /> Newspaper</h1>
