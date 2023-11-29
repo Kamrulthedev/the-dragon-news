@@ -31,7 +31,7 @@ const Login = () => {
                     </div>
 
                     <div className="form-control mt-6">
-                        <button type="submit" className="btn btn-primary">Login</button>
+                        <button type="submit" className="btn btn-primary">LOGIN</button>
                     </div>
                     <div className="text-center mt-4">
                         <h1>Dont’t Have An Account ? <Link to={'/Register'}> <button className="btn btn-ghost text-orange-500">Register</button></Link></h1>
