@@ -23,7 +23,6 @@ const Navber = () => {
                             {NavLinks}
                         </ul>
                     </div>
-
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -37,7 +36,6 @@ const Navber = () => {
                         </div>
                     </div>
                     <Link to={'/Login'}><button className="btn">Login</button></Link>
-
                 </div>
             </div>
         </div>
