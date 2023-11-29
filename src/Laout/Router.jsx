@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import About from "../Pages/About/About";
 import Career from "../Pages/Career/Career";
+import News from "../Pages/News/News";
 const MyRouter = createBrowserRouter ([
     {
         path:'/',
@@ -13,6 +14,10 @@ const MyRouter = createBrowserRouter ([
             {
                 path:'/',
                 element:<Home></Home>
+            },
+            {
+                path:'/dragon/:id',
+                element:<News></News>
             },
             {
                 path:'/Login',
