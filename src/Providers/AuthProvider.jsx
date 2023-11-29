@@ -7,17 +7,21 @@ export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
+    const [loding, setLoding] = useState(true)
 
 
     const createUser = (email, password) => {
+        setLoding(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
     const singIn = (email, password) =>{
+        setLoding(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     const logOut = () =>{
+        setLoding(true)
         return signOut(auth);
     }
 
@@ -25,6 +29,7 @@ const AuthProvider = ({ children }) => {
         const unSubscribe = onAuthStateChanged(auth, currenUser =>{
             console.log('user in the auth state change', currenUser)
             setUser(currenUser)
+            setLoding(false)
         })
         return () =>{
             unSubscribe();
@@ -33,6 +38,7 @@ const AuthProvider = ({ children }) => {
 
     const authinfo = {
         user,
+        loding,
         createUser,
         logOut,
         singIn

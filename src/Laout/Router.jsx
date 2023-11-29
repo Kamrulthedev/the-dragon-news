@@ -6,6 +6,7 @@ import Register from "../Pages/Register/Register";
 import About from "../Pages/About/About";
 import Career from "../Pages/Career/Career";
 import News from "../Pages/News/News";
+import Privaterout from "../Pages/PrivateRout/Privaterout";
 const MyRouter = createBrowserRouter ([
     {
         path:'/',
@@ -17,7 +18,7 @@ const MyRouter = createBrowserRouter ([
             },
             {
                 path:'/dragon/:id',
-                element:<News></News>
+                element:<Privaterout><News></News></Privaterout>
             },
             {
                 path:'/Login',

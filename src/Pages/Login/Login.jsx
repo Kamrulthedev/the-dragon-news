@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navber from "../../Sared/Navber/Navber";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { useContext } from "react";
 const Login = () => {
 
     const { singIn } = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
+    console.log(location)
 
     const hadlerLogin = e =>{
 
@@ -17,6 +20,8 @@ const Login = () => {
         singIn(email, password)
         .then(result =>{
             console.log(result.user)
+            // Navigate
+            navigate(location?.state? location.state : '/')
         })
         .catch(error =>console.log(error))
     }
