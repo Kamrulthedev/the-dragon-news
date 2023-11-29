@@ -14,11 +14,11 @@ const MainHome = () => {
 
     return (
         <div>
-            <h1 className="text-2xl font-bold">Dragon News Home:{news.length}</h1>
+            <h1 className="text-2xl font-bold">Dragon News Home</h1>
            
                 <div>
                     {
-                        news.map(dragon =><Homes key={news.id} dragon={dragon}></Homes>)
+                        news.map(dragon =><Homes key={dragon._id} dragon={dragon}></Homes>)
                     }
                 </div>
             

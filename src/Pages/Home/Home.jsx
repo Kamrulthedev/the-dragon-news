@@ -17,7 +17,7 @@ const Home = () => {
                 <div className="">
                     <LeftSideNav></LeftSideNav>
                 </div>
-                <div className="lg:col-span-2 border-2">
+                <div className="lg:col-span-2 ">
                     <MainHome></MainHome>
                 </div>
                 <div className="">
