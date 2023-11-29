@@ -8,9 +8,8 @@ const Login = () => {
     const location = useLocation()
     const navigate = useNavigate()
     console.log(location)
-
+    
     const hadlerLogin = e =>{
-
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
@@ -31,7 +30,6 @@ const Login = () => {
             <div>
                 <h1 className="text-4xl font-bold text-center mb-4">Please Login</h1>
                 <form onSubmit={hadlerLogin} className="bg-gray-200	p-6 rounded-lg md:w-3/4 lg:w-1/2 mx-auto">
-                    
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email address</span>
@@ -47,14 +45,12 @@ const Login = () => {
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
                     </div>
-
                     <div className="form-control mt-6">
                         <button type="submit" className="btn btn-primary">LOGIN</button>
                     </div>
                     <div className="text-center mt-4">
                         <h1>Dont’t Have An Account ? <Link to={'/Register'}> <button className="btn btn-ghost text-orange-500">Register</button></Link></h1>
                     </div>
-
                 </form>
             </div>
         </div>
