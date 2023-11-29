@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import Navber from "../../Sared/Navber/Navber";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { useContext } from "react";
 const Login = () => {
+
+    const { singIn } = useContext(AuthContext)
+
     const hadlerLogin = e =>{
+
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-        console.log(form.get('password'));
+          const email = form.get('email')
+          const password = form.get('password')
+        console.log(email, password);
     }
     return (
         <div>
