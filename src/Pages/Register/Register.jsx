@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import Navber from "../../Sared/Navber/Navber";
-const Login = () => {
-    const hadlerLogin = e =>{
-        e.preventDefault();
-        console.log(e.currentTarget);
-        const form = new FormData(e.currentTarget);
-        console.log(form.get('password'));
-    }
+
+const Register = () => {
     return (
         <div>
-            <Navber></Navber>
-            <div>
-                <h1 className="text-4xl font-bold text-center mb-4">Please Login</h1>
-                <form onSubmit={hadlerLogin} className="bg-gray-200	p-6 rounded-lg md:w-3/4 lg:w-1/2 mx-auto">
+          <Navber></Navber>
+          <div>
+                <h1 className="text-4xl font-bold text-center mb-4">Register your account</h1>
+                <form  className="bg-gray-200	p-6 rounded-lg md:w-3/4 lg:w-1/2 mx-auto">
+                    
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Your Name</span>
+                        </label>
+                        <input type="name" placeholder="Enter your name" name="name" className="input input-bordered" required />
+                    </div>
                     
                     <div className="form-control">
                         <label className="label">
@@ -33,9 +35,7 @@ const Login = () => {
                     <div className="form-control mt-6">
                         <button type="submit" className="btn btn-primary">Login</button>
                     </div>
-                    <div className="text-center mt-4">
-                        <h1>Dont’t Have An Account ? <Link to={'/Register'}> <button className="btn btn-ghost text-orange-500">Register</button></Link></h1>
-                    </div>
+                    
 
                 </form>
             </div>
@@ -43,4 +43,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;

@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import UserDefold from "../../assets/user.png"
+// import UserDefold from "../../assets/user.png"
 
 
 const Navber = () => {
