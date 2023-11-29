@@ -24,7 +24,7 @@ const LeftSideNav = () => {
         <div>
              <h1 className="text-2xl font-bold">All Caterogy</h1>
             
-             <div className="space-y-6 mt-8">
+             <div className="space-y-10 mt-8">
                 {
                     categorie.map(category => <Link
                         to={`/category/${category.id}`}

@@ -36,7 +36,7 @@ const Navber = () => {
                             <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                         </div>
                     </div>
-                    <Link><button className="btn">Login</button></Link>
+                    <Link to={'/Login'}><button className="btn">Login</button></Link>
 
                 </div>
             </div>

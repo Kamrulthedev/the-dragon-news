@@ -3,6 +3,7 @@ import LeftSideNav from "../../Sared/LeftSideNav/LeftSideNav";
 import Navber from "../../Sared/Navber/Navber";
 import RigthSideNav from "../../Sared/RigthSideNav/RigthSideNav";
 import BrekingNews from "./BrekingNews";
+import MainHome from "./MainHome";
 
 
 const Home = () => {
@@ -17,9 +18,7 @@ const Home = () => {
                     <LeftSideNav></LeftSideNav>
                 </div>
                 <div className="lg:col-span-2 border-2">
-                    <h1 className="text-4xl">
-                        News is coming soon....
-                    </h1>
+                    <MainHome></MainHome>
                 </div>
                 <div className="">
                     <RigthSideNav></RigthSideNav>
