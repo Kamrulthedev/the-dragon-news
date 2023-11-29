@@ -3,7 +3,7 @@
 const Navber = () => {
     return (
         <div>
-            <h2 className="text-2xl">Navber</h2>
+        <h1>This is Navber Pages</h1>
         </div>
     );
 };

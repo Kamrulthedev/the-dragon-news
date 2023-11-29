@@ -1,5 +1,7 @@
 import Haeder from "../../Sared/Haeder/Haeder";
+import LeftSideNav from "../../Sared/LeftSideNav/LeftSideNav";
 import Navber from "../../Sared/Navber/Navber";
+import RigthSideNav from "../../Sared/RigthSideNav/RigthSideNav";
 
 
 const Home = () => {
@@ -8,8 +10,19 @@ const Home = () => {
 
            <Haeder></Haeder>
            <Navber></Navber>
-
-            <h2 className="text-4xl font-poppins font-bold">This is Home Pages</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div className="border-2">
+                    <LeftSideNav></LeftSideNav>
+                </div>
+                <div className="lg:col-span-2 border-2">
+                    <h1 className="text-4xl">
+                        News is coming soon....
+                    </h1>
+                </div>
+                <div className="border-2">
+                    <RigthSideNav></RigthSideNav>
+                </div>
+            </div>
         </div>
     );
 };
