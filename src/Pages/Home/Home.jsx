@@ -21,7 +21,7 @@ const Home = () => {
                         News is coming soon....
                     </h1>
                 </div>
-                <div className="border-2">
+                <div className="">
                     <RigthSideNav></RigthSideNav>
                 </div>
             </div>
