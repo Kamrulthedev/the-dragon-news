@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types'; // ES6
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
+
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {

@@ -14,6 +14,11 @@ const Login = () => {
           const email = form.get('email')
           const password = form.get('password')
         console.log(email, password);
+        singIn(email, password)
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch(error =>console.log(error))
     }
     return (
         <div>
